@@ -18,3 +18,20 @@ def show_purchase(purchase):
 buying(products,purchase)
 print("_________________")
 show_purchase(purchase)
+
+print()
+def get_data(number, discipline, **info):
+    table ={}
+    table["nr"]=number
+    table["disc"]=discipline
+
+    for k,v in info.items():
+        table[k]=v
+
+    return table
+
+
+summary1=get_data(23,'basketball', team='Chicago Bulls',
+                  name="Michael", surname="Jordan", height=1.98)
+print()
+print(summary1)
