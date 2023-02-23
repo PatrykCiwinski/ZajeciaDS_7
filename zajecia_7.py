@@ -1,6 +1,3 @@
-
-
-
 products = ['soap','sponge','brush','shower_gel','rubber_duck','shampoo']
 
 purchase=[]
@@ -10,10 +7,13 @@ def buying(products, purchase):
         stuff=products.pop()
         print(f"buying {stuff}")
         purchase.append(stuff)
+
+
 def show_purchase(purchase):
-    print(f"You bought: ")
+    print(f"You bought: ",end="")
     for p in purchase:
-        print(p)
+        print(p,end=",")
+
 
 buying(products,purchase)
 print("_________________")
