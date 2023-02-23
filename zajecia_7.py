@@ -35,3 +35,9 @@ summary1=get_data(23,'basketball', team='Chicago Bulls',
                   name="Michael", surname="Jordan", height=1.98)
 print()
 print(summary1)
+
+summary2=get_data(None,'tenis',
+                  name="Iga", surname="Świątek", height=1.85, weight="65")
+
+for k,v in summary2.items():
+    print(k,v)
